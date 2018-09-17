@@ -15,7 +15,7 @@ export default [{
     icon: 'el-icon-d-arrow-right',
     sub: [{
         name: 'Radio 单选框',
-        componentName: 'ForRadio'
+        componentName: 'FormRadio'
     },{
         name: 'CheckBox 多选框',
         componentName: 'FormCheckBox'

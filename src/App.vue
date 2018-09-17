@@ -2,10 +2,17 @@
   <div id="app">
     
   <el-container>
-    <el-header>Header</el-header>
+    <el-header class='header'>
+      <vheader> Element </vheader>
+    </el-header>
     <el-container>
-      <el-aside width="200px">Aside</el-aside>
-      <el-main>Main</el-main>
+      <el-aside width="200px">
+        <navmenu> </navmenu>
+      </el-aside>
+      <el-main>
+        <router-view></router-view>
+
+      </el-main>
     </el-container>
   </el-container>
 
@@ -13,11 +20,24 @@
 </template>
 
 <script>
+import NavMenu from '@/components/NavMenu.vue'
+import Header from '@/components/Header.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    'navmenu': NavMenu,
+    'vheader': Header
+  }
 }
 </script>
 
 <style>
+.header {
+  background-color: #409EFF;
+  color: #fff;
+  line-height: 60px;
+}
+
 
 </style>
