@@ -21,7 +21,7 @@ new Vue({
   template: '<App/>',
   router,
   created() {
-    axios.get('/api/userlist').then((response) => {
+    axios.get('/api/test').then((response) => {
       console.log(response.data)
     })
   }
