@@ -23,6 +23,7 @@
 import NavMenu from '@/components/NavMenu.vue'
 import Header from '@/components/Header.vue'
 
+
 export default {
   name: 'App',
   components: {
